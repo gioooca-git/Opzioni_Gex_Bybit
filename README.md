@@ -29,6 +29,7 @@ CalcoloGEXTemporizzatoDa_BYBIT_2.1.py
 
   show daily gex,gammaflip, etc... values and save (images,csv, jsson) in .\data_bybit_60s\yyy-mm-dd the following files: 
   
+  
      GEX_dashboard_ALL_BTC_yyy-mm-dd.png    image for ALL options chains gamma filip,gex, temporal variations 
      
      GEX_dashboard_0DTE_BTC_yyy-mm-dd.png   image for 0DTE options chains gamma filip,gex, temporal variations 
