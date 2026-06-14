@@ -1,10 +1,15 @@
 '''
+
+dashboard live per visualizzare i dati GEX scaricati da BYBIT  
+(script Bybit_0DTE_e_ALL_scaricoPipeLine_creazioneDF_CalcoloGex_1.2.py)
+
 da lanciare in modalità streamlit
 
 
-c:\Users\u023779\Documents\python\Opzioni_GEX\.venv\Scripts\streamlit run c:\Users\u023779\Documents\python\Opzioni_GEX\dashboard_live.py 
+& c:/Users/u023779/Documents/python/Opzioni_GEX/.venv/Scripts/streamlit run ./dashboard_livex.y.py
 
-
+ATTENZION!!!!!
+sostituire x e y con le versione attuale
 
 v 1.0
 dashboard live per visualizzare i dati GEX scaricati da BYBIT
@@ -29,7 +34,13 @@ import os
 # ==============================
 st.set_page_config(layout="wide")
 
-CSV_PATH = r".\data_bybit_60s\2026-06-13\GEX_0DTE_ALL_BTC_2026-06-13.csv"
+# Calcola la data attuale nel formato ANNO-MESE-GIORNO
+oggi = datetime.now().strftime("%Y-%m-%d")
+
+# Genera il percorso dinamico inserendo la data calcolata
+CSV_PATH = f".\\data_bybit_60s\\{oggi}\\GEX_0DTE_ALL_BTC_{oggi}.csv"
+
+#CSV_PATH = r".\data_bybit_60s\2026-06-14\GEX_0DTE_ALL_BTC_2026-06-14.csv"
 
 REFRESH_SECONDS = 60
 

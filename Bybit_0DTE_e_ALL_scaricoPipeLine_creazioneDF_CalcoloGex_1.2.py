@@ -9,6 +9,8 @@ mi apre dentro il browser i grafici per 0DTE e ALL di Gex,call wall, put wall, g
 ----------------
 vers 1.2
 questa versione NON mi apre dentro il browser i grafici ma li salva su disco in .\data_bybit_btc_options
+
+per leggere i dati salvati su disco usare dashboard_live1.1.py
 '''
 
 import os
